@@ -80,40 +80,40 @@
     </script>
     <script>
       var now = new Date();
-      var currentGMTHours = (now.getHours())+(now.getTimezoneOffset()/60);
+      var currentUTCHours = (now.getHours())+(now.getTimezoneOffset()/60);
       var currentMinutesAsDecimal = (now.getMinutes()/60);
-      var currentGMTTimeAsDecimal = currentGMTHours+currentMinutesAsDecimal;
+      var currentUTCTimeAsDecimal = currentUTCHours+currentMinutesAsDecimal;
       var currentProgram = ""
       console.log(now);
-      console.log("Current GMT hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
-      console.log("Current GMT decimal: ", currentGMTTimeAsDecimal);
-      if (currentGMTTimeAsDecimal > 1 && currentGMTTimeAsDecimal < 2.25) {
-        console.log("Currently: alt 1");
-        currentProgram="Current Program: Alternative Tandas";
-      } else if (currentGMTTimeAsDecimal > 2.25 && currentGMTTimeAsDecimal < 3) {
-        console.log("Currently: practica 1");
-        currentProgram="Current Program: Mini Pr&aacute;ctica";
-      } else if (currentGMTTimeAsDecimal > 3 && currentGMTTimeAsDecimal < 9) {
-        console.log("Currently: trad 1");
-        currentProgram="Current Program: Traditional Tandas";
-      } else if (currentGMTTimeAsDecimal > 9 && currentGMTTimeAsDecimal < 10.25) {
-        console.log("Currently: alt 2");
-        currentProgram="Current Program: Alternative Tandas";
-      } else if (currentGMTTimeAsDecimal > 10.25 && currentGMTTimeAsDecimal < 11) {
-        console.log("Currently: practica 2");
-        currentProgram="Current Program: Mini Pr&aacute;ctica";
-      } else if (currentGMTTimeAsDecimal > 11 && currentGMTTimeAsDecimal < 17) {
-        console.log("Currently: trad 2");
-        currentProgram="Current Program: Traditional Tandas";
-      } else if (currentGMTTimeAsDecimal > 17 && currentGMTTimeAsDecimal < 18.25) {
-        console.log("Currently: alt 3");
-        currentProgram="Current Program: Alternative Tandas";
-      } else if (currentGMTTimeAsDecimal > 18.25 && currentGMTTimeAsDecimal < 19) {
-        console.log("Currently: practica 3");
-        currentProgram="Current Program: Mini Pr&aacute;ctica";
+      console.log("Current UTC hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
+      console.log("Current UTC decimal: ", currentUTCTimeAsDecimal);
+      if (currentUTCTimeAsDecimal > 1 && currentUTCTimeAsDecimal < 2.25) {
+        console.log("Currently: Block 1 Alt");
+        currentProgram="Current Program: Alternative Tandas (Block 1)";
+      } else if (currentUTCTimeAsDecimal > 2.25 && currentUTCTimeAsDecimal < 3) {
+        console.log("Currently: Block 1 Practica");
+        currentProgram="Current Program: Mini Pr&aacute;ctica (Block 1)";
+      } else if (currentUTCTimeAsDecimal > 3 && currentUTCTimeAsDecimal < 9) {
+        console.log("Currently: Block 1 Trad");
+        currentProgram="Current Program: Traditional Tandas (Block 1)";
+      } else if (currentUTCTimeAsDecimal > 9 && currentUTCTimeAsDecimal < 10.25) {
+        console.log("Currently: Block 2 Alt");
+        currentProgram="Current Program: Alternative Tandas (Block 2)";
+      } else if (currentUTCTimeAsDecimal > 10.25 && currentUTCTimeAsDecimal < 11) { //here
+        console.log("Currently: Block 2 Practica");
+        currentProgram="Current Program: Mini Pr&aacute;ctica (Block 2)";
+      } else if (currentUTCTimeAsDecimal > 11 && currentUTCTimeAsDecimal < 17) {
+        console.log("Currently: Block 2 Trad");
+        currentProgram="Current Program: Traditional Tandas (Block 2)";
+      } else if (currentUTCTimeAsDecimal > 17 && currentUTCTimeAsDecimal < 18.25) {
+        console.log("Currently: Block 3 Alt");
+        currentProgram="Current Program: Alternative Tandas (Block 3)";
+      } else if (currentUTCTimeAsDecimal > 18.25 && currentUTCTimeAsDecimal < 19) {
+        console.log("Currently: Block 3 Practica");
+        currentProgram="Current Program: Mini Pr&aacute;ctica (Block 3)";
       } else {
-        console.log("Currently: trad 3");
-        currentProgram="Current Program: Traditional Tandas";
+        console.log("Currently: Block 3 Trad");
+        currentProgram="Current Program: Traditional Tandas (Block 3)";
       }
       document.getElementById("current-program").innerHTML = currentProgram;
     </script>
