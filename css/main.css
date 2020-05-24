@@ -52,3 +52,14 @@ a:hover, a:active {
 #shield {
   width: 7em;
 }
+
+#now-playing {
+  border-radius: 0.55em;
+  border: 2px solid #e0a720;
+  color: #e0a720;
+  margin: 3em;
+}
+
+#now-playing p {
+  margin-bottom: 0.2em;
+}
