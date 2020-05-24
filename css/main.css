@@ -72,8 +72,8 @@ a:hover, a:active {
 #schedule-wrapper {
   background-color: rgba(0, 0, 0, .85);
   display: none;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
