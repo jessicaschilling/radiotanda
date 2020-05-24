@@ -13,13 +13,19 @@ If you're a tango-lovin' developer and you'd like to help make this project bett
 IN UTC …
 
 Block 1 alt: 0:00 - 1:15
+
 Block 1 practica: 1:15 - 2:00
+
 Block 1 trad: 2:00-8:00
 
 Block 2 alt: 8:00-9:15
+
 Block 2 practica: 9:15-10:00
+
 Block 2 trad: 10:00-16:00
 
 Block 3 alt: 16:00-17:15
+
 Block 3 practica: 17:15-18:00
+
 Block 3 trad: 18:00-24:00
