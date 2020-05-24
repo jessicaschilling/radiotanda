@@ -12,15 +12,15 @@ If you're a tango-lovin' developer and you'd like to help make this project bett
 ### Daily program schedule as of 25 May 2020
 IN UTC …
 
-Block 1 alt: 0:00 - 1:15
+Block 1 alt: 00:00 - 01:15
 
-Block 1 practica: 1:15 - 2:00
+Block 1 practica: 01:15 - 02:00
 
-Block 1 trad: 2:00-8:00
+Block 1 trad: 02:00-08:00
 
-Block 2 alt: 8:00-9:15
+Block 2 alt: 08:00-09:15
 
-Block 2 practica: 9:15-10:00
+Block 2 practica: 09:15-10:00
 
 Block 2 trad: 10:00-16:00
 
