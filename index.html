@@ -44,21 +44,21 @@
         <br/>
         <h3>BLOCK ONE</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas:</span> 5:00-6:15pm Los Angeles / 1:00-2:15am London / 9:00-10:15am Singapore</li>
-          <li><span class="accent">Mini Practica (single-song TTMTTV, no cortinas):</span>  6:15-7:00pm Los Angeles / 2:15-3:00am London / 10:15-11:00am Singapore</li>
-          <li><span class="accent">Traditional Tandas:</span>  7:00pm-1:00am Los Angeles / 3:00-9:00am London / 11:00am-5:00pm Singapore</li>
+          <li><span class="accent">Alternative Tandas (3-song TTMTTV, with cortinas):</span> 01:00-02:15 UTC / your local time</li>
+          <li><span class="accent">Mini Practica (single-song TTMTTV, no cortinas):</span> 02:15-03:00 UTC / your local time</li>
+          <li><span class="accent">Traditional Tandas (3-song TTMTTV, with cortinas):</span> 03:00-09:00 UTC / your local time</li>
         </ul>
         <h3>BLOCK TWO</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas:</span> 1:00-2:15am Los Angeles / 9:00-10:15am London / 5:00-6:15pm Singapore</li>
-          <li><span class="accent">Mini Practica:</span>  2:15-3:00am Los Angeles / 10:15-11:00am London / 6:15-7:00pm Singapore</li>
-          <li><span class="accent">Traditional Tandas:</span>  3:00-9:00am Los Angeles / 11:00am-5:00pm London / 7:00pm-1:00am Singapore</li>
+          <li><span class="accent">Alternative Tandas:</span> 09:00-10:15 UTC / your local time</li>
+          <li><span class="accent">Mini Practica:</span> 10:15-11:00 UTC / your local time</li>
+          <li><span class="accent">Traditional Tandas:</span> 11:00-17:00 UTC / your local time</li>
         </ul>
         <h3>BLOCK THREE</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas:</span> 9:00-10:15am Los Angeles / 5:00-6:15pm London / 1:00-2:15am Singapore</li>
-          <li><span class="accent">Mini Practica:</span>  10:15-11:00am Los Angeles / 6:15-7:00pm London / 2:15-3:00am Singapore</li>
-          <li><span class="accent">Traditional Tandas:</span>  11:00am-5:00pm Los Angeles / 7:00pm-1:00am London / 3:00-9:00am Singapore</li>
+          <li><span class="accent">Alternative Tandas:</span> 17:00-18:15 UTC / your local time</li>
+          <li><span class="accent">Mini Practica:</span> 18:15-19:00 UTC / your local time</li>
+          <li><span class="accent">Traditional Tandas:</span> 19:00-01:00 UTC / your local time</li>
         </ul>
       </div>
     </div>
@@ -87,28 +87,28 @@
       console.log(now);
       console.log("Current UTC hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
       console.log("Current UTC decimal: ", currentUTCTimeAsDecimal);
-      if (currentUTCTimeAsDecimal > 1 && currentUTCTimeAsDecimal < 2.25) {
+      if (currentUTCTimeAsDecimal >= 1 && currentUTCTimeAsDecimal < 2.25) {
         console.log("Currently: Block 1 Alt");
         currentProgram="Current Program: Alternative Tandas (Block 1)";
-      } else if (currentUTCTimeAsDecimal > 2.25 && currentUTCTimeAsDecimal < 3) {
+      } else if (currentUTCTimeAsDecimal >= 2.25 && currentUTCTimeAsDecimal < 3) {
         console.log("Currently: Block 1 Practica");
         currentProgram="Current Program: Mini Pr&aacute;ctica (Block 1)";
-      } else if (currentUTCTimeAsDecimal > 3 && currentUTCTimeAsDecimal < 9) {
+      } else if (currentUTCTimeAsDecimal >= 3 && currentUTCTimeAsDecimal < 9) {
         console.log("Currently: Block 1 Trad");
         currentProgram="Current Program: Traditional Tandas (Block 1)";
-      } else if (currentUTCTimeAsDecimal > 9 && currentUTCTimeAsDecimal < 10.25) {
+      } else if (currentUTCTimeAsDecimal >= 9 && currentUTCTimeAsDecimal < 10.25) {
         console.log("Currently: Block 2 Alt");
         currentProgram="Current Program: Alternative Tandas (Block 2)";
-      } else if (currentUTCTimeAsDecimal > 10.25 && currentUTCTimeAsDecimal < 11) { //here
+      } else if (currentUTCTimeAsDecimal >= 10.25 && currentUTCTimeAsDecimal < 11) { //here
         console.log("Currently: Block 2 Practica");
         currentProgram="Current Program: Mini Pr&aacute;ctica (Block 2)";
-      } else if (currentUTCTimeAsDecimal > 11 && currentUTCTimeAsDecimal < 17) {
+      } else if (currentUTCTimeAsDecimal >= 11 && currentUTCTimeAsDecimal < 17) {
         console.log("Currently: Block 2 Trad");
         currentProgram="Current Program: Traditional Tandas (Block 2)";
-      } else if (currentUTCTimeAsDecimal > 17 && currentUTCTimeAsDecimal < 18.25) {
+      } else if (currentUTCTimeAsDecimal >= 17 && currentUTCTimeAsDecimal < 18.25) {
         console.log("Currently: Block 3 Alt");
         currentProgram="Current Program: Alternative Tandas (Block 3)";
-      } else if (currentUTCTimeAsDecimal > 18.25 && currentUTCTimeAsDecimal < 19) {
+      } else if (currentUTCTimeAsDecimal >= 18.25 && currentUTCTimeAsDecimal < 19) {
         console.log("Currently: Block 3 Practica");
         currentProgram="Current Program: Mini Pr&aacute;ctica (Block 3)";
       } else {
