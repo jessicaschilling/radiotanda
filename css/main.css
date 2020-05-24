@@ -21,6 +21,17 @@ h2 {
   font-size: 2em;
 }
 
+p {
+  font-size: 1.4em;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover, a:active {
+  color: #e0a720;
+}
 #main {
   align-items: center;
   display: flex;
@@ -30,7 +41,7 @@ h2 {
 
 #content {
   background-color: rgba(0, 0, 0, .92);
-  border-radius: 0.75em;
+  border-radius: 0.55em;
   color: #fff;
   max-width: 900px;
   padding: 2em;
