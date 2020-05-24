@@ -30,6 +30,9 @@
         </div>
       </div>
     </div>
+    <div id="site-credit">
+      Made with <span role="img" aria-label="love">&#128155;</span> by <a href="https://www.jessicaschilling.com" target="_blank" rel="noopener noreferrer">Jessica Schilling</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/jessicaschilling/radiotanda" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
 
     <div id="schedule-wrapper">
       <div id="schedule">
@@ -84,7 +87,6 @@
       console.log(now);
       console.log("Current GMT hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
       console.log("Current GMT decimal: ", currentGMTTimeAsDecimal);
-
       if (currentGMTTimeAsDecimal > 1 && currentGMTTimeAsDecimal < 2.25) {
         console.log("Currently: alt 1");
         currentProgram="Current Program: Alternative Tandas";
@@ -113,9 +115,7 @@
         console.log("Currently: trad 3");
         currentProgram="Current Program: Traditional Tandas";
       }
-
       document.getElementById("current-program").innerHTML = currentProgram;
-
     </script>
   </body>
 </html>

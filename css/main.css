@@ -35,7 +35,7 @@ a:hover, a:active {
 #main {
   align-items: center;
   display: flex;
-  margin: 2em;
+  margin: 2em 2em 1em 2em;
   justify-content: center;
 }
 
@@ -127,4 +127,10 @@ a:hover, a:active {
 
 .accent {
   color: #e0a720;
+}
+
+#site-credit {
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
 }
