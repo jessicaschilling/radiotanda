@@ -12,8 +12,8 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <link rel="manifest" href="/site.webmanifest">
-    <script>function show_schedule() {document.getElementById("schedule").style.display= "block";}</script>
-    <script>function hide_schedule() {document.getElementById("schedule").style.display= "none";}</script>
+    <script>function show_schedule() {document.getElementById("schedule-wrapper").style.display= "flex";}</script>
+    <script>function hide_schedule() {document.getElementById("schedule-wrapper").style.display= "none";}</script>
   </head>
   <body>
     <div id="main">
@@ -31,7 +31,13 @@
           <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Keep Radio Tanda on the air!', '#e0a720', 'T6T11QTWL');kofiwidget2.draw();</script>
         </div>
       </div>
+    </div>
+
+    <div id="schedule-wrapper" onclick = "hide_schedule()">
       <div id="schedule">
+        <div class="close-x" onclick = "hide_schedule()">
+          <svg height="30" width="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#e0a720" d="M443.6 387.1L312.4 255.4l131.5-130c5.4-5.4 5.4-14.2 0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4-3.7 0-7.2 1.5-9.8 4L256 197.8 124.9 68.3c-2.6-2.6-6.1-4-9.8-4-3.7 0-7.2 1.5-9.8 4L68 105.9c-5.4 5.4-5.4 14.2 0 19.6l131.5 130L68.4 387.1c-2.6 2.6-4.1 6.1-4.1 9.8 0 3.7 1.4 7.2 4.1 9.8l37.4 37.6c2.7 2.7 6.2 4.1 9.8 4.1 3.5 0 7.1-1.3 9.8-4.1L256 313.1l130.7 131.1c2.7 2.7 6.2 4.1 9.8 4.1 3.5 0 7.1-1.3 9.8-4.1l37.4-37.6c2.6-2.6 4.1-6.1 4.1-9.8-.1-3.6-1.6-7.1-4.2-9.7z"/></svg>
+        </div>
         <h2>Schedule</h2>
         <h3>Radio Tanda operates on three eight-hour blocks daily for the best experience across time zones.</h3>
         <br/>
@@ -49,12 +55,12 @@
         </ul>
         <h3>BLOCK THREE</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas:</span> 9:00-10:15am London / 5:00-6:15pm Singapore / 1:00-2:15am Los Angeles</li>
-          <li><span class="accent">Mini Practica:</span>  10:15-11:00am London / 6:15-7:00pm Singapore / 2:15-3:00am Los Angeles</li>
-          <li><span class="accent">Traditional Tandas:</span>  11:00am-5:00pm London / 7:00pm-1:00am Singapore / 3:00-9:00am Los Angeles</li>
+          <li><span class="accent">Alternative Tandas:</span> 9:00-10:15am Los Angeles / 5:00-6:15pm London / 1:00-2:15am Singapore</li>
+          <li><span class="accent">Mini Practica:</span>  10:15-11:00am Los Angeles / 6:15-7:00pm London / 2:15-3:00am Singapore</li>
+          <li><span class="accent">Traditional Tandas:</span>  11:00am-5:00pm Los Angeles / 7:00pm-1:00am London / 3:00-9:00am Singapore</li>
         </ul>
-        <p class="clickable" onclick = "hide_schedule()">close</p>
       </div>
     </div>
+
   </body>
 </html>

@@ -69,15 +69,26 @@ a:hover, a:active {
   color: #fff;
 }
 
+#schedule-wrapper {
+  background-color: rgba(0, 0, 0, .85);
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100000000;
+  align-items: center;
+  justify-content: center;
+}
+
 #schedule {
   background-color: #232323;
   border-radius: 0.55em;
   color: #fff;
-  display: none;
   max-width: 800px;
   padding: 3em;
   position: absolute;
-  z-index: 100000000;
 }
 
 #schedule h2 {
@@ -98,6 +109,15 @@ a:hover, a:active {
 
 #schedule p {
   font-size: 1.1em;
+}
+
+.close-x {
+  color: #e0a720;
+  cursor: pointer;
+  padding: 1.2em;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .clickable {
