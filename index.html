@@ -44,21 +44,21 @@
         <br/>
         <h3>BLOCK ONE</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas (3-song TTMTTV, with cortinas):</span> 01:00-02:15 UTC / your local time</li>
-          <li><span class="accent">Mini Practica (single-song TTMTTV, no cortinas):</span> 02:15-03:00 UTC / your local time</li>
-          <li><span class="accent">Traditional Tandas (3-song TTMTTV, with cortinas):</span> 03:00-09:00 UTC / your local time</li>
+          <li><span class="accent">Alternative Tandas (3-song TTMTTV, with cortinas):</span> 01:00-02:15 UTC <span class="local-utc-offset"></span></li>
+          <li><span class="accent">Mini Practica (single-song TTMTTV, no cortinas):</span> 02:15-03:00 UTC <span class="local-utc-offset"></span></li>
+          <li><span class="accent">Traditional Tandas (3-song TTMTTV, with cortinas):</span> 03:00-09:00 <span class="local-utc-offset"></span></li>
         </ul>
         <h3>BLOCK TWO</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas:</span> 09:00-10:15 UTC / your local time</li>
-          <li><span class="accent">Mini Practica:</span> 10:15-11:00 UTC / your local time</li>
-          <li><span class="accent">Traditional Tandas:</span> 11:00-17:00 UTC / your local time</li>
+          <li><span class="accent">Alternative Tandas:</span> 09:00-10:15 UTC <span class="local-utc-offset"></span></li>
+          <li><span class="accent">Mini Practica:</span> 10:15-11:00 UTC <span class="local-utc-offset"></span></li>
+          <li><span class="accent">Traditional Tandas:</span> 11:00-17:00 UTC <span class="local-utc-offset"></span></li>
         </ul>
         <h3>BLOCK THREE</h3>
         <ul>
-          <li><span class="accent">Alternative Tandas:</span> 17:00-18:15 UTC / your local time</li>
-          <li><span class="accent">Mini Practica:</span> 18:15-19:00 UTC / your local time</li>
-          <li><span class="accent">Traditional Tandas:</span> 19:00-01:00 UTC / your local time</li>
+          <li><span class="accent">Alternative Tandas:</span> 17:00-18:15 UTC <span class="local-utc-offset"></span></li>
+          <li><span class="accent">Mini Practica:</span> 18:15-19:00 UTC <span class="local-utc-offset"></span></li>
+          <li><span class="accent">Traditional Tandas:</span> 19:00-01:00 UTC <span class="local-utc-offset"></span></li>
         </ul>
       </div>
     </div>
@@ -81,12 +81,19 @@
     <script>
       var now = new Date();
       var currentUTCHours = (now.getHours())+(now.getTimezoneOffset()/60);
+      var localUTCOffset = (now.getTimezoneOffset()/60);
+      var localUTCOffsetSign = Math.sign(localUTCOffset);
+      var localUTCOffsetWord =""
       var currentMinutesAsDecimal = (now.getMinutes()/60);
       var currentUTCTimeAsDecimal = currentUTCHours+currentMinutesAsDecimal;
       var currentProgram = ""
       console.log(now);
+      console.log("Local UTC offset: ", localUTCOffset);
       console.log("Current UTC hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
       console.log("Current UTC decimal: ", currentUTCTimeAsDecimal);
+      if (localUTCOffsetSign == 1) {
+        localUTCOffsetWord = "+";
+      }
       if (currentUTCTimeAsDecimal >= 1 && currentUTCTimeAsDecimal < 2.25) {
         console.log("Currently: Block 1 Alt");
         currentProgram="Current Program: Alternative Tandas (Block 1)";
@@ -116,6 +123,9 @@
         currentProgram="Current Program: Traditional Tandas (Block 3)";
       }
       document.getElementById("current-program").innerHTML = currentProgram;
+      for(var i = 0; i < document.getElementsByClassName("local-utc-offset").length; i++){
+        document.getElementsByClassName("local-utc-offset")[i].innerHTML = "(" + localUTCOffsetWord + localUTCOffset + "h from your local time)";
+      }
     </script>
   </body>
 </html>
