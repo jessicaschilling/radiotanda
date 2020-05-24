@@ -20,7 +20,7 @@
         <h1>Radio Tanda</h1>
         <h2>Nonstop Argentine tango tandas for you!</h2>
         <div id="now-playing">
-          <p>Current program: $programname</p>
+          <p id="current-program"></p>
           <div class="clickable" id="open-schedule">(see full schedule)</div>
           <iframe src="https://broadcaster.live365.com/v1/now-playing/large/a22075" width='440px' height='240px' frameborder="0"></iframe>
         </div>
@@ -61,12 +61,12 @@
     </div>
     <script>
       var modal = document.getElementById("schedule-wrapper");
-      var open_modal = document.getElementById("open-schedule");
-      var close_modal = document.getElementsByClassName("close-x")[0];
-      open_modal.onclick = function() {
+      var openModal = document.getElementById("open-schedule");
+      var closeModal = document.getElementsByClassName("close-x")[0];
+      openModal.onclick = function() {
         modal.style.display = "flex";
       }
-      close_modal.onclick = function() {
+      closeModal.onclick = function() {
         modal.style.display = "none";
       }
       window.onclick = function(event) {
@@ -74,6 +74,48 @@
           modal.style.display = "none";
         }
       }
+    </script>
+    <script>
+      var now = new Date();
+      var currentGMTHours = (now.getHours())+(now.getTimezoneOffset()/60);
+      var currentMinutesAsDecimal = (now.getMinutes()/60);
+      var currentGMTTimeAsDecimal = currentGMTHours+currentMinutesAsDecimal;
+      var currentProgram = ""
+      console.log(now);
+      console.log("Current GMT hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
+      console.log("Current GMT decimal: ", currentGMTTimeAsDecimal);
+
+      if (currentGMTTimeAsDecimal > 1 && currentGMTTimeAsDecimal < 2.25) {
+        console.log("Currently: alt 1");
+        currentProgram="Current Program: Alternative Tandas";
+      } else if (currentGMTTimeAsDecimal > 2.25 && currentGMTTimeAsDecimal < 3) {
+        console.log("Currently: practica 1");
+        currentProgram="Current Program: Mini Pr&aacute;ctica";
+      } else if (currentGMTTimeAsDecimal > 3 && currentGMTTimeAsDecimal < 9) {
+        console.log("Currently: trad 1");
+        currentProgram="Current Program: Traditional Tandas";
+      } else if (currentGMTTimeAsDecimal > 9 && currentGMTTimeAsDecimal < 10.25) {
+        console.log("Currently: alt 2");
+        currentProgram="Current Program: Alternative Tandas";
+      } else if (currentGMTTimeAsDecimal > 10.25 && currentGMTTimeAsDecimal < 11) {
+        console.log("Currently: practica 2");
+        currentProgram="Current Program: Mini Pr&aacute;ctica";
+      } else if (currentGMTTimeAsDecimal > 11 && currentGMTTimeAsDecimal < 17) {
+        console.log("Currently: trad 2");
+        currentProgram="Current Program: Traditional Tandas";
+      } else if (currentGMTTimeAsDecimal > 17 && currentGMTTimeAsDecimal < 18.25) {
+        console.log("Currently: alt 3");
+        currentProgram="Current Program: Alternative Tandas";
+      } else if (currentGMTTimeAsDecimal > 18.25 && currentGMTTimeAsDecimal < 19) {
+        console.log("Currently: practica 3");
+        currentProgram="Current Program: Mini Pr&aacute;ctica";
+      } else {
+        console.log("Currently: trad 3");
+        currentProgram="Current Program: Traditional Tandas";
+      }
+
+      document.getElementById("current-program").innerHTML = currentProgram;
+
     </script>
   </body>
 </html>
