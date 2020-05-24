@@ -9,7 +9,7 @@ While I might have *really really really wanted* to spin up my own streaming sta
 
 If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate.
 
-### Master schedule as of 25 May 2020
+### Daily program schedule as of 25 May 2020
 IN UTC …
 
 Block 1 alt: 0:00 - 1:15
