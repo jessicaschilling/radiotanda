@@ -57,9 +57,50 @@ a:hover, a:active {
   border-radius: 0.55em;
   border: 2px solid #e0a720;
   color: #e0a720;
-  margin: 3em;
+  margin: 3em auto;
+  max-width: 600px;
 }
 
 #now-playing p {
   margin-bottom: 0.2em;
+}
+
+#now-playing > .clickable:hover {
+  color: #fff;
+}
+
+#schedule {
+  background-color: #232323;
+  border-radius: 0.55em;
+  color: #fff;
+  display: none;
+  max-width: 800px;
+  padding: 3em;
+  position: absolute;
+  z-index: 100000000;
+}
+
+#schedule h2 {
+  color: #e0a720;
+  font-family: 'Rye', cursive;
+  font-size: 4em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#schedule h3 {
+  color: #e0a720;
+  font-size: 1.4em;
+  margin: 0;
+  text-align: center;
+}
+
+#schedule p {
+  font-size: 1.1em;
+}
+
+.clickable {
+  cursor: pointer;
+  text-decoration: underline;
 }
