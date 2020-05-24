@@ -83,7 +83,7 @@ a:hover, a:active {
 #schedule h2 {
   color: #e0a720;
   font-family: 'Rye', cursive;
-  font-size: 4em;
+  font-size: 3.4em;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -103,4 +103,8 @@ a:hover, a:active {
 .clickable {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.accent {
+  color: #e0a720;
 }
