@@ -14,9 +14,9 @@ While I might have *really really really wanted* to spin up my own streaming sta
 
 Why no tandas on a service called, ironically, Radio Tanda? Unfortunately, American DMCA rules really keep this from being possible. To quote:
 
-``
-A Webcaster must comply with the “sound recording performance complement,” which prohibits a Webcaster from transmitting, within any given three hour period: (A) more than three different songs from the same album, with no more than two such songs transmitted consecutively. (B) more than four different songs by the same artist or compilation, with no more than three such songs transmitted consecutively.
-``
+> A Webcaster must comply with the “sound recording performance complement,” which prohibits a Webcaster from transmitting, within any given three hour period:
+> (A) more than three different songs from the same album, with no more than two such songs transmitted consecutively.
+> (B) more than four different songs by the same artist or compilation, with no more than three such songs transmitted consecutively.
 
 Sadly, that's *kind of how tandas work*. So, for the sake of experimentation, the streaming station alternates between a mixture of traditional and alternative tango, largely chosen at random but adjusted as possible for aesthetic niceness.
 
