@@ -37,5 +37,5 @@ If you happen to be listening to Radio Tanda and hear a miscategorized song, or 
 - 17:00-18:00 UTC
 - 21:00-22:00 UTC
 
-### Colophon
-If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate.
+### Contribute!
+If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate. :heart:
