@@ -7,7 +7,7 @@ Just a simple HTML/CSS single-page site for directing visitors to the Live365 st
 
 While I might have *really really really wanted* to spin up my own streaming station, things get tricky with international royalties, and in the interest of getting the music to the dancing folks more expediently, using a third-party service (as of now, Live365) currently makes the most sense. It still needs a pretty entry point, though, with links to the schedule and stream. Hence this simple little site.
 
-### A sad but important note
+## A sad but important note
 
 Why no tandas on a service called, ironically, Radio Tanda? Unfortunately, American DMCA rules really keep this from being possible. To quote:
 
@@ -19,7 +19,7 @@ Sadly, that's *kind of how tandas work*. So, for the sake of experimentation, th
 
 If you happen to be listening to Radio Tanda and hear a miscategorized song, or something that you find to just be horrible, please [open an issue](https://github.com/jessicaschilling/radiotanda/issues/new?assignees=jessicaschilling&labels=&template=miscategorized-awful-song.md&title=Miscategorized%2Fawful+song%3A+%28song+title+here%29) for it.
 
-### Daily schedule (in UTC)
+## Daily schedule (in UTC)
 
 **Tango Classics (traditional)**
 - 02:00-05:00 UTC
@@ -37,5 +37,5 @@ If you happen to be listening to Radio Tanda and hear a miscategorized song, or 
 - 17:00-18:00 UTC
 - 21:00-22:00 UTC
 
-### Contribute!
+## Contribute!
 If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate. :heart:
