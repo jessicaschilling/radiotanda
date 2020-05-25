@@ -15,7 +15,9 @@ Why no tandas on a service called, ironically, Radio Tanda? Unfortunately, Ameri
 A Webcaster must comply with the “sound recording performance complement,” which prohibits a Webcaster from transmitting, within any given three hour period: (A) more than three different songs from the same album, with no more than two such songs transmitted consecutively. (B) more than four different songs by the same artist or compilation, with no more than three such songs transmitted consecutively.
 ``
 
-Sadly, that's *kind of how tandas work*. So, for the sake of experimentation, the streaming station alternates between a mixture of traditional and alternative tango, largely chosen at random.
+Sadly, that's *kind of how tandas work*. So, for the sake of experimentation, the streaming station alternates between a mixture of traditional and alternative tango, largely chosen at random but adjusted as possible for aesthetic niceness.
+
+If you happen to be listening to Radio Tanda and hear a miscategorized song, or something that you find to just be horrible, please [open an issue](https://github.com/jessicaschilling/radiotanda/issues/new?assignees=jessicaschilling&labels=&template=miscategorized-awful-song.md&title=Miscategorized%2Fawful+song%3A+%28song+title+here%29) for it.
 
 ### Daily schedule (in UTC)
 
