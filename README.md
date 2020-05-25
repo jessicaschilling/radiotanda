@@ -17,27 +17,23 @@ A Webcaster must comply with the “sound recording performance complement,” w
 
 Sadly, that's *kind of how tandas work*. So, for the sake of experimentation, the streaming station alternates between a mixture of traditional and alternative tango, largely chosen at random.
 
-### The program schedule we didn't get to have ...
-IN UTC …
+### Daily schedule (in UTC)
 
-Block 1 alt: 00:00 - 01:15
+**Tango Classics (traditional)**
+- 02:00-05:00 UTC
+- 06:00-09:00 UTC
+- 10:00-13:00 UTC
+- 14:00-17:00 UTC
+- 18:00-21:00 UTC
+- 22:00-01:00 UTC
 
-Block 1 practica: 01:15 - 02:00
-
-Block 1 trad: 02:00-08:00
-
-Block 2 alt: 08:00-09:15
-
-Block 2 practica: 09:15-10:00
-
-Block 2 trad: 10:00-16:00
-
-Block 3 alt: 16:00-17:15
-
-Block 3 practica: 17:15-18:00
-
-Block 3 trad: 18:00-24:00
+**New Sounds (modern orquestas and alternative)**
+- 01:00-02:00 UTC
+- 05:00-06:00 UTC
+- 09:00-10:00 UTC
+- 13:00-14:00 UTC
+- 17:00-18:00 UTC
+- 21:00-22:00 UTC
 
 ### Colophon
 If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate.
-

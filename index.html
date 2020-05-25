@@ -27,21 +27,24 @@
             <h3>Daily Schedule</h3>
             <div class="clickable" onclick = "hide_schedule()">(close)</div>
             <br/>
-            <div>To comply with <a href="https://support.live365.com/hc/en-us/articles/115002892247-What-is-DMCA-" target="_blank">U.S. DMCA laws</a> for streaming music, we play three hours of traditional tango, followed by one hour of alternative tango, and then repeat. Here's a list of when those time slots start:</div>
-            <p>Traditional Tango</p>
+            <div>To comply with <a href="https://support.live365.com/hc/en-us/articles/115002892247-What-is-DMCA-" target="_blank">U.S. DMCA laws</a> for streaming music, we play 3 hours of traditional music, followed by 1 hour of alternative and modern-orquesta music, and then repeat. Here's a list of when those time slots start:</div>
+            <p>Tango Classics (traditional)</p>
               <span class="accent">02:00-05:00 UTC </span> <span class="local-utc-offset"></span><br/>
               <span class="accent">06:00-09:00 UTC</span> <span class="local-utc-offset"></span><br/>
               <span class="accent">10:00-13:00 UTC </span> <span class="local-utc-offset"></span><br/>
               <span class="accent">14:00-17:00 UTC </span> <span class="local-utc-offset"></span></br>
               <span class="accent">18:00-21:00 UTC</span> <span class="local-utc-offset"></span><br/>
               <span class="accent">22:00-01:00 UTC </span> <span class="local-utc-offset"></span>
-            <p>Alternative Tango</p>
+            <p>New Sounds (modern orquestas and alternative)</p>
               <span class="accent">01:00-02:00 UTC </span> <span class="local-utc-offset"></span><br/>
               <span class="accent">05:00-06:00 UTC </span> <span class="local-utc-offset"></span><br/>
               <span class="accent">09:00-10:00 UTC</span> <span class="local-utc-offset"></span><br/>
               <span class="accent">13:00-14:00 UTC </span> <span class="local-utc-offset"></span><br/>
               <span class="accent">17:00-18:00 UTC </span> <span class="local-utc-offset"></span></br>
               <span class="accent">21:00-22:00 UTC</span> <span class="local-utc-offset"></span>
+
+            <br/><br/>
+            No matter the program, every song indicates which dance it's for &mdash; just look for the <span class="accent">T</span> (tango), <span class="accent">V</span> (valse) or <span class="accent">M</span> (milonga) image next to the song title!
 
             <!-- <p>Traditional Tandas (3-song TTMTTV, with cortinas)</p>
               <span class="accent">02:00-08:00 UTC</span> <span class="local-utc-offset"></span><br/>
@@ -88,34 +91,44 @@
       if (localUTCOffsetSign == 1) {
         localUTCOffsetWord = "+";
       }
-      if (currentUTCTimeAsDecimal >= 0 && currentUTCTimeAsDecimal < 1.25) {
+      if (currentUTCTimeAsDecimal >= 1 && currentUTCTimeAsDecimal < 2) {
         console.log("Currently: Block 1 Alt");
-        currentProgram="Current Program: Alternative Hour";
-      } else if (currentUTCTimeAsDecimal >= 1.25 && currentUTCTimeAsDecimal < 2) {
-        console.log("Currently: Block 1 Practica");
-        currentProgram="Current Program: Mini Pr&aacute;ctica";
-      } else if (currentUTCTimeAsDecimal >= 2 && currentUTCTimeAsDecimal < 8) {
+        currentProgram="Current Program: New Sounds";
+      } else if (currentUTCTimeAsDecimal >= 2 && currentUTCTimeAsDecimal < 5) {
         console.log("Currently: Block 1 Trad");
-        currentProgram="Current Program: Traditional Tango";
-      } else if (currentUTCTimeAsDecimal >= 8 && currentUTCTimeAsDecimal < 9.25) {
+        currentProgram="Current Program: Tango Classics";
+      } else if (currentUTCTimeAsDecimal >= 5 && currentUTCTimeAsDecimal < 6) {
         console.log("Currently: Block 2 Alt");
-        currentProgram="Current Program: Alternative Hour";
-      } else if (currentUTCTimeAsDecimal >= 9.25 && currentUTCTimeAsDecimal < 10) { //here
-        console.log("Currently: Block 2 Practica");
-        currentProgram="Current Program: Mini Pr&aacute;ctica";
-      } else if (currentUTCTimeAsDecimal >= 10 && currentUTCTimeAsDecimal < 16) {
+        currentProgram="Current Program: New Sounds";
+      } else if (currentUTCTimeAsDecimal >= 6 && currentUTCTimeAsDecimal < 9) {
         console.log("Currently: Block 2 Trad");
-        currentProgram="Current Program: Traditional Tango";
-      } else if (currentUTCTimeAsDecimal >= 16 && currentUTCTimeAsDecimal < 17.25) {
+        currentProgram="Current Program: Tango Classics";
+      } else if (currentUTCTimeAsDecimal >= 9 && currentUTCTimeAsDecimal < 10) {
         console.log("Currently: Block 3 Alt");
-        currentProgram="Current Program: Alternative Hour";
-      } else if (currentUTCTimeAsDecimal >= 17.25 && currentUTCTimeAsDecimal < 18) {
-        console.log("Currently: Block 3 Practica");
-        currentProgram="Current Program: Mini Pr&aacute;ctica";
-      } else {
+        currentProgram="Current Program: New Sounds";
+      } else if (currentUTCTimeAsDecimal >= 10 && currentUTCTimeAsDecimal < 13) {
         console.log("Currently: Block 3 Trad");
-        currentProgram="Current Program: Traditional Tango";
+        currentProgram="Current Program: Tango Classics";
+      } else if (currentUTCTimeAsDecimal >= 13 && currentUTCTimeAsDecimal < 14) {
+        console.log("Currently: Block 4 Alt");
+        currentProgram="Current Program: New Sounds";
+      } else if (currentUTCTimeAsDecimal >= 14 && currentUTCTimeAsDecimal < 17) {
+        console.log("Currently: Block 4 Trad");
+        currentProgram="Current Program: Tango Classics";
+      } else if (currentUTCTimeAsDecimal >= 17 && currentUTCTimeAsDecimal < 18) {
+        console.log("Currently: Block 5 Alt");
+        currentProgram="Current Program: New Sounds";
+      } else if (currentUTCTimeAsDecimal >= 18 && currentUTCTimeAsDecimal <21) {
+        console.log("Currently: Block 5 Trad");
+        currentProgram="Current Program: Tango Classics";
+      } else if (currentUTCTimeAsDecimal >= 21 && currentUTCTimeAsDecimal < 22) {
+        console.log("Currently: Block 6 Alt");
+        currentProgram="Current Program: New Sounds";
+      } else {
+        console.log("Currently: Block 6 Trad");
+        currentProgram="Current Program: Tango Classics";
 
+      // OLD SKED IF WE CAN EVER HAVE TANDAS :(
       // if (currentUTCTimeAsDecimal >= 0 && currentUTCTimeAsDecimal < 1.25) {
       //   console.log("Currently: Block 1 Alt");
       //   currentProgram="Current Program: Alternative Tandas";
