@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Radio Tanda | Your 24/7 Milonga </title>
+    <title>Radio Tanda | 24/7 Tango Tunes </title>
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -18,7 +18,7 @@
       <div id="content">
         <div><img id="shield" src="img/rt-shield.png"></div>
         <h1>Radio Tanda</h1>
-        <h2>Nonstop Argentine tango tandas for you!</h2>
+        <h2>Nonstop Argentine tango tunes for you!</h2>
         <div id="now-playing">
           <h3 id="current-program"></h3>
           <div class="clickable" id="show_schedule_link" onclick = "show_schedule()">(see full schedule)</div>
@@ -26,8 +26,24 @@
           <div id="schedule">
             <h3>Daily Schedule</h3>
             <div class="clickable" onclick = "hide_schedule()">(close)</div>
+            <br/>
+            <div>To comply with <a href="https://support.live365.com/hc/en-us/articles/115002892247-What-is-DMCA-" target="_blank">U.S. DMCA laws</a> for streaming music, we play three hours of traditional tango, followed by one hour of alternative tango, and then repeat. Here's a list of when those time slots start:</div>
+            <p>Traditional Tango</p>
+              <span class="accent">02:00-05:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">06:00-09:00 UTC</span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">10:00-13:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">14:00-17:00 UTC </span> <span class="local-utc-offset"></span></br>
+              <span class="accent">18:00-21:00 UTC</span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">22:00-01:00 UTC </span> <span class="local-utc-offset"></span>
+            <p>Alternative Tango</p>
+              <span class="accent">01:00-02:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">05:00-06:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">09:00-10:00 UTC</span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">13:00-14:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">17:00-18:00 UTC </span> <span class="local-utc-offset"></span></br>
+              <span class="accent">21:00-22:00 UTC</span> <span class="local-utc-offset"></span>
 
-            <p>Traditional Tandas (3-song TTMTTV, with cortinas)</p>
+            <!-- <p>Traditional Tandas (3-song TTMTTV, with cortinas)</p>
               <span class="accent">02:00-08:00 UTC</span> <span class="local-utc-offset"></span><br/>
               <span class="accent">10:00-16:00 UTC </span> <span class="local-utc-offset"></span><br/>
               <span class="accent">18:00-00:00 UTC </span> <span class="local-utc-offset"></span>
@@ -38,14 +54,14 @@
             <p>Mini Practica (single-song TTMTTV, no cortinas)</p>
               <span class="accent">09:15-10:00 UTC</span> <span class="local-utc-offset"></span><br/>
               <span class="accent">17:15-18:00 UTC</span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">01:15-02:00 UTC</span> <span class="local-utc-offset"></span>
+              <span class="accent">01:15-02:00 UTC</span> <span class="local-utc-offset"></span> -->
           </div>
 
           <div id="widget-horizontal"><iframe src="https://broadcaster.live365.com/v1/now-playing/large/a22075" width='440px' height='240px' frameborder="0"></iframe></div>
           <div id="widget-vertical"><iframe src="https://broadcaster.live365.com/v1/now-playing/small/a22075" width='220px' height='380px' frameborder="0"></iframe></div>
         </div>
         <div>
-          <p>This is an expensive experiment. Please <a href="https://ko-fi.com/T6T11QTWL" target="_blank">help support it!</a></p>
+          <p>This is an expensive experiment. Please <a href="https://ko-fi.com/T6T11QTWL" target="_blank">help fund it!</a></p>
           <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Keep Radio Tanda on the air!', '#e0a720', 'T6T11QTWL');kofiwidget2.draw();</script>
         </div>
       </div>
@@ -74,31 +90,59 @@
       }
       if (currentUTCTimeAsDecimal >= 0 && currentUTCTimeAsDecimal < 1.25) {
         console.log("Currently: Block 1 Alt");
-        currentProgram="Current Program: Alternative Tandas";
+        currentProgram="Current Program: Alternative Hour";
       } else if (currentUTCTimeAsDecimal >= 1.25 && currentUTCTimeAsDecimal < 2) {
         console.log("Currently: Block 1 Practica");
         currentProgram="Current Program: Mini Pr&aacute;ctica";
       } else if (currentUTCTimeAsDecimal >= 2 && currentUTCTimeAsDecimal < 8) {
         console.log("Currently: Block 1 Trad");
-        currentProgram="Current Program: Traditional Tandas";
+        currentProgram="Current Program: Traditional Tango";
       } else if (currentUTCTimeAsDecimal >= 8 && currentUTCTimeAsDecimal < 9.25) {
         console.log("Currently: Block 2 Alt");
-        currentProgram="Current Program: Alternative Tandas";
+        currentProgram="Current Program: Alternative Hour";
       } else if (currentUTCTimeAsDecimal >= 9.25 && currentUTCTimeAsDecimal < 10) { //here
         console.log("Currently: Block 2 Practica");
         currentProgram="Current Program: Mini Pr&aacute;ctica";
       } else if (currentUTCTimeAsDecimal >= 10 && currentUTCTimeAsDecimal < 16) {
         console.log("Currently: Block 2 Trad");
-        currentProgram="Current Program: Traditional Tandas";
+        currentProgram="Current Program: Traditional Tango";
       } else if (currentUTCTimeAsDecimal >= 16 && currentUTCTimeAsDecimal < 17.25) {
         console.log("Currently: Block 3 Alt");
-        currentProgram="Current Program: Alternative Tandas";
+        currentProgram="Current Program: Alternative Hour";
       } else if (currentUTCTimeAsDecimal >= 17.25 && currentUTCTimeAsDecimal < 18) {
         console.log("Currently: Block 3 Practica");
         currentProgram="Current Program: Mini Pr&aacute;ctica";
       } else {
         console.log("Currently: Block 3 Trad");
-        currentProgram="Current Program: Traditional Tandas";
+        currentProgram="Current Program: Traditional Tango";
+
+      // if (currentUTCTimeAsDecimal >= 0 && currentUTCTimeAsDecimal < 1.25) {
+      //   console.log("Currently: Block 1 Alt");
+      //   currentProgram="Current Program: Alternative Tandas";
+      // } else if (currentUTCTimeAsDecimal >= 1.25 && currentUTCTimeAsDecimal < 2) {
+      //   console.log("Currently: Block 1 Practica");
+      //   currentProgram="Current Program: Mini Pr&aacute;ctica";
+      // } else if (currentUTCTimeAsDecimal >= 2 && currentUTCTimeAsDecimal < 8) {
+      //   console.log("Currently: Block 1 Trad");
+      //   currentProgram="Current Program: Traditional Tandas";
+      // } else if (currentUTCTimeAsDecimal >= 8 && currentUTCTimeAsDecimal < 9.25) {
+      //   console.log("Currently: Block 2 Alt");
+      //   currentProgram="Current Program: Alternative Tandas";
+      // } else if (currentUTCTimeAsDecimal >= 9.25 && currentUTCTimeAsDecimal < 10) { //here
+      //   console.log("Currently: Block 2 Practica");
+      //   currentProgram="Current Program: Mini Pr&aacute;ctica";
+      // } else if (currentUTCTimeAsDecimal >= 10 && currentUTCTimeAsDecimal < 16) {
+      //   console.log("Currently: Block 2 Trad");
+      //   currentProgram="Current Program: Traditional Tandas";
+      // } else if (currentUTCTimeAsDecimal >= 16 && currentUTCTimeAsDecimal < 17.25) {
+      //   console.log("Currently: Block 3 Alt");
+      //   currentProgram="Current Program: Alternative Tandas";
+      // } else if (currentUTCTimeAsDecimal >= 17.25 && currentUTCTimeAsDecimal < 18) {
+      //   console.log("Currently: Block 3 Practica");
+      //   currentProgram="Current Program: Mini Pr&aacute;ctica";
+      // } else {
+      //   console.log("Currently: Block 3 Trad");
+      //   currentProgram="Current Program: Traditional Tandas";
       }
       document.getElementById("current-program").innerHTML = currentProgram;
       for(var i = 0; i < document.getElementsByClassName("local-utc-offset").length; i++){
