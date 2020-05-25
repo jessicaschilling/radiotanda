@@ -25,20 +25,20 @@ If you happen to be listening to Radio Tanda and hear a miscategorized song, or 
 ## Daily schedule (in UTC)
 
 **Tango Classics (traditional)**
-- 02:00-05:00 UTC
-- 06:00-09:00 UTC
-- 10:00-13:00 UTC
-- 14:00-17:00 UTC
-- 18:00-21:00 UTC
-- 22:00-01:00 UTC
+- 03:00-06:00 UTC
+- 07:00-10:00 UTC
+- 11:00-14:00 UTC
+- 15:00-18:00 UTC
+- 19:00-22:00 UTC
+- 23:00-02:00 UTC
 
 **New Sounds (modern orquestas and alternative)**
-- 01:00-02:00 UTC
-- 05:00-06:00 UTC
-- 09:00-10:00 UTC
-- 13:00-14:00 UTC
-- 17:00-18:00 UTC
-- 21:00-22:00 UTC
+- 02:00-03:00 UTC
+- 06:00-07:00 UTC
+- 10:00-11:00 UTC
+- 14:00-15:00 UTC
+- 18:00-19:00 UTC
+- 22:00-23:00 UTC
 
 ## Contribute!
 If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate. :heart:

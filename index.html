@@ -29,19 +29,19 @@
             <br/>
             <div>To comply with <a href="https://github.com/jessicaschilling/radiotanda#a-sad-but-important-note" target="_blank">U.S. DMCA laws</a> for streaming music, we play 3 hours of traditional music, followed by 1 hour of alternative and modern-orquesta music, and then repeat. Here's a list of when those time slots start:</div>
             <p>Tango Classics (traditional)</p>
-              <span class="accent">02:00-05:00 UTC </span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">06:00-09:00 UTC</span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">10:00-13:00 UTC </span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">14:00-17:00 UTC </span> <span class="local-utc-offset"></span></br>
-              <span class="accent">18:00-21:00 UTC</span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">22:00-01:00 UTC </span> <span class="local-utc-offset"></span>
+              <span class="accent">03:00-06:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">07:00-10:00 UTC</span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">11:00-14:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">15:00-18:00 UTC </span> <span class="local-utc-offset"></span></br>
+              <span class="accent">19:00-22:00 UTC</span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">23:00-02:00 UTC </span> <span class="local-utc-offset"></span>
             <p>New Sounds (modern orquestas and alternative)</p>
-              <span class="accent">01:00-02:00 UTC </span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">05:00-06:00 UTC </span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">09:00-10:00 UTC</span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">13:00-14:00 UTC </span> <span class="local-utc-offset"></span><br/>
-              <span class="accent">17:00-18:00 UTC </span> <span class="local-utc-offset"></span></br>
-              <span class="accent">21:00-22:00 UTC</span> <span class="local-utc-offset"></span>
+              <span class="accent">02:00-03:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">06:00-07:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">10:00-11:00 UTC</span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">14:00-15:00 UTC </span> <span class="local-utc-offset"></span><br/>
+              <span class="accent">18:00-19:00 UTC </span> <span class="local-utc-offset"></span></br>
+              <span class="accent">22:00-23:00 UTC</span> <span class="local-utc-offset"></span>
 
             <br/><br/>
             No matter the program, every song indicates which dance it's for &mdash; just look for the <span class="accent">T</span> (tango), <span class="accent">V</span> (valse) or <span class="accent">M</span> (milonga) image next to the song title!
@@ -78,6 +78,12 @@
     <script>
       var now = new Date();
       var currentUTCHours = (now.getHours())+(now.getTimezoneOffset()/60);
+
+      if (currentUTCHours >= 24) {
+        currentUTCHours = (currentUTCHours - 24)
+      }
+      //if more than 24, subtract 24
+
       var localUTCOffset = (now.getTimezoneOffset()/60);
       var localUTCOffsetSign = Math.sign(localUTCOffset);
       var localUTCOffsetWord =""
@@ -86,46 +92,46 @@
       var currentProgram = ""
       console.log(now);
       console.log("Local UTC offset: ", localUTCOffset);
-      console.log("Current UTC hh/mm: ", (now.getHours())+(now.getTimezoneOffset()/60), now.getMinutes());
+      console.log("Current UTC hh/mm: ", currentUTCHours, now.getMinutes());
       console.log("Current UTC decimal: ", currentUTCTimeAsDecimal);
       if (localUTCOffsetSign == 1) {
         localUTCOffsetWord = "+";
       }
-      if (currentUTCTimeAsDecimal >= 1 && currentUTCTimeAsDecimal < 2) {
-        console.log("Currently: Block 1 Alt");
+      if (currentUTCTimeAsDecimal >= 2 && currentUTCTimeAsDecimal < 3) {
+        console.log("Program: Alt 6");
         currentProgram="Current Program: New Sounds";
-      } else if (currentUTCTimeAsDecimal >= 2 && currentUTCTimeAsDecimal < 5) {
-        console.log("Currently: Block 1 Trad");
+      } else if (currentUTCTimeAsDecimal >= 3 && currentUTCTimeAsDecimal < 6) {
+        console.log("Program: Trad 6");
         currentProgram="Current Program: Tango Classics";
-      } else if (currentUTCTimeAsDecimal >= 5 && currentUTCTimeAsDecimal < 6) {
-        console.log("Currently: Block 2 Alt");
+      } else if (currentUTCTimeAsDecimal >= 6 && currentUTCTimeAsDecimal < 7) {
+        console.log("Program: Alt 1");
         currentProgram="Current Program: New Sounds";
-      } else if (currentUTCTimeAsDecimal >= 6 && currentUTCTimeAsDecimal < 9) {
-        console.log("Currently: Block 2 Trad");
+      } else if (currentUTCTimeAsDecimal >= 7 && currentUTCTimeAsDecimal < 10) {
+        console.log("Program: Trad 1");
         currentProgram="Current Program: Tango Classics";
-      } else if (currentUTCTimeAsDecimal >= 9 && currentUTCTimeAsDecimal < 10) {
-        console.log("Currently: Block 3 Alt");
+      } else if (currentUTCTimeAsDecimal >= 10 && currentUTCTimeAsDecimal < 11) {
+        console.log("Program: Alt 2");
         currentProgram="Current Program: New Sounds";
-      } else if (currentUTCTimeAsDecimal >= 10 && currentUTCTimeAsDecimal < 13) {
-        console.log("Currently: Block 3 Trad");
+      } else if (currentUTCTimeAsDecimal >= 11 && currentUTCTimeAsDecimal < 14) {
+        console.log("Program: Trad 2");
         currentProgram="Current Program: Tango Classics";
-      } else if (currentUTCTimeAsDecimal >= 13 && currentUTCTimeAsDecimal < 14) {
-        console.log("Currently: Block 4 Alt");
+      } else if (currentUTCTimeAsDecimal >= 14 && currentUTCTimeAsDecimal < 15) {
+        console.log("Program: Alt 3");
         currentProgram="Current Program: New Sounds";
-      } else if (currentUTCTimeAsDecimal >= 14 && currentUTCTimeAsDecimal < 17) {
-        console.log("Currently: Block 4 Trad");
+      } else if (currentUTCTimeAsDecimal >= 15 && currentUTCTimeAsDecimal < 18) {
+        console.log("Program: Trad 3");
         currentProgram="Current Program: Tango Classics";
-      } else if (currentUTCTimeAsDecimal >= 17 && currentUTCTimeAsDecimal < 18) {
-        console.log("Currently: Block 5 Alt");
+      } else if (currentUTCTimeAsDecimal >= 18 && currentUTCTimeAsDecimal < 19) {
+        console.log("Program: Alt 4");
         currentProgram="Current Program: New Sounds";
-      } else if (currentUTCTimeAsDecimal >= 18 && currentUTCTimeAsDecimal <21) {
-        console.log("Currently: Block 5 Trad");
+      } else if (currentUTCTimeAsDecimal >= 19 && currentUTCTimeAsDecimal <22) {
+        console.log("Program: Trad 4");
         currentProgram="Current Program: Tango Classics";
-      } else if (currentUTCTimeAsDecimal >= 21 && currentUTCTimeAsDecimal < 22) {
-        console.log("Currently: Block 6 Alt");
+      } else if (currentUTCTimeAsDecimal >= 22 && currentUTCTimeAsDecimal < 23) {
+        console.log("Program: Alt 5");
         currentProgram="Current Program: New Sounds";
       } else {
-        console.log("Currently: Block 6 Trad");
+        console.log("Program: Trad 5");
         currentProgram="Current Program: Tango Classics";
 
       // OLD SKED IF WE CAN EVER HAVE TANDAS :(
@@ -154,7 +160,7 @@
       //   console.log("Currently: Block 3 Practica");
       //   currentProgram="Current Program: Mini Pr&aacute;ctica";
       // } else {
-      //   console.log("Currently: Block 3 Trad");
+      //   console.log("Program: Block 3 Trad");
       //   currentProgram="Current Program: Traditional Tandas";
       }
       document.getElementById("current-program").innerHTML = currentProgram;
