@@ -1,7 +1,10 @@
 # Radio Tanda (`radiotanda`)
-### Site files for the Radio Tanda tango streaming station at [radiotanda.com](http://www.radiotanda.com).
 
 ![Radio Tanda header image](https://repository-images.githubusercontent.com/266480642/7856f580-9d54-11ea-8369-47fe2d00e44b)
+
+## About
+
+### Site files for the Radio Tanda tango streaming station at [radiotanda.com](http://www.radiotanda.com).
 
 Just a simple HTML/CSS single-page site for directing visitors to the Live365 stream of [Radio Tanda](http://www.radiotanda.com) (and, of course, the [donation link](https://ko-fi.com/radiotanda)!). Now that quarantine life is keeping me from DJing at festivals and milongas, I want to do whatever I can to make sure we can all enjoy tango music wherever we may be.
 
