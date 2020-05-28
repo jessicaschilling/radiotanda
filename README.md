@@ -42,3 +42,5 @@ If you happen to be listening to Radio Tanda and hear something that you find to
 
 ## Contribute!
 If you're a tango-lovin' developer and you'd like to help make this project better, please let me know! I'd love to collaborate. :heart:
+
+Or, if you're able to [help offset the costs of the streaming service](https://ko-fi.com/radiotanda), that would be amazing, too. Rights and streaming costs can get crazy expensive, and I'm relying on the tango community to help keep this thing operating!
