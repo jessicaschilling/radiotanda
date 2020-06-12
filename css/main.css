@@ -53,6 +53,24 @@ a:hover, a:active {
   width: 7em;
 }
 
+#announcement {
+  background-color: #990000;
+  border-radius: 0.55em;
+  color: #fff;
+  margin: 3em auto;
+  padding: 1.5em 1.5em 0.5em 1.5em;
+  max-width: 600px;
+}
+
+#announcement h3 {
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+#announcement p {
+  font-size: 1em;
+}
+
 #now-playing {
   border-radius: 0.55em;
   border: 2px solid #e0a720;
