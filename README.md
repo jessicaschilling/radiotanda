@@ -1,5 +1,9 @@
 # Radio Tanda (`radiotanda`)
 
+## All good things must come to an end ...
+
+### After three years of Radio Tanda, the tango world is returning to its pre-pandemic vibrancy ... and with that, Radio Tanda will be playing its last tanda on March 22, 2023. Thank you for your support over these years!
+
 ![Radio Tanda header image](https://repository-images.githubusercontent.com/266480642/7856f580-9d54-11ea-8369-47fe2d00e44b)
 
 ## About
