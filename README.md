@@ -6,7 +6,7 @@
 
 ![Radio Tanda header image](https://repository-images.githubusercontent.com/266480642/7856f580-9d54-11ea-8369-47fe2d00e44b)
 
-~~## About
+~~## About~~
 
 ~~### Site files for the Radio Tanda tango streaming station at [radiotanda.com](http://www.radiotanda.com).
 
